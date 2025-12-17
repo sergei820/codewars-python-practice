@@ -23,7 +23,7 @@ def to_camel_case(text):
 
     # better solution O(n)
     capitalize_next = False
-    result = []  # DON'T USE '' HERE, str is immutable, it will create a new str each time!
+    result = []  # DON'T USE '' HERE, str is immutable, it will create a new str each iteration!
 
     for i, c in enumerate(text):
         if c == '-' or c == '_':
